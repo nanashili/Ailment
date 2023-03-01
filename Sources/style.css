@@ -1,0 +1,236 @@
+/*
+ This CSS file is only used for active developing on the report. The CSS is eventually copied over to make sure we support Swift Package Manager as packages can't contain resources.
+ We make use of https://cssminifier.com/ to minify the CSS, which we copy over into the HTMLGenerating.swift.
+ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin: 50px 50px 20px;
+  color: #17181a;
+}
+
+h1 {
+  margin: 10px 0 20px;
+  font-weight: 400;
+}
+
+h3 {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  display: block;
+}
+
+p:last-child, ul:last-child {
+  margin-bottom: 0;
+}
+
+pre {
+  overflow: scroll;
+}
+
+a {
+  color: #111;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+}
+
+.main-content {
+  width: calc(100% - 190px);
+}
+
+.nav-container {
+  width: 180px;
+}
+
+.nav-container nav {
+  position: fixed;
+  border-radius: 4px;
+}
+
+.nav-container nav ul {
+  margin: 0;
+}
+
+.nav-container nav ul li {
+  margin-bottom: 5px;
+  display: block;
+}
+.nav-container nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-container nav ul li a{
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+}
+
+.nav-container nav ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.chapter {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.chapter:last-child {
+  border-bottom: 0;
+}
+
+.chapter .anchor {
+  position: absolute;
+  top: -20px;
+}
+
+.chapter-content {
+  font-family: sans-serif;
+}
+
+table th {
+  text-align: left;
+  padding: 0 5px 0 0;
+  font-weight: 500;
+}
+
+table th, table td {
+  font-size: 14px;
+}
+
+.collapsible-session {
+  margin: 15px 0px;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+input[type=checkbox] {
+  margin: 10px 10px 10px 0px;
+}
+
+button {
+  margin: 10px 0px;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    font-family: monospace;
+    font-size: 14px;
+    overflow: scroll;
+}
+
+summary {
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::marker {
+  display: none;
+}
+
+summary p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media(max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+  .container {
+    margin: 0;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .nav-container {
+    display: none;
+  }
+  table th, table td {
+    display: block;
+
+  }
+  table td {
+    margin-bottom: 5px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #f7f7f7;
+  }
+
+  .chapter {
+    border-bottom-color: rgba(255,255,255,0.3);
+  }
+
+  .nav-container nav ul li a {
+    color: rgba(255,255,255,0.6);
+  }
+  .nav-container nav ul li a:hover {
+    color: #fff;
+  }
+
+  a {
+    color: rgba(255,255,255,0.85);
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  .footer-logo path {
+    fill: #f7f7f7;
+  }
+}
