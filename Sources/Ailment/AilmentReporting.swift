@@ -121,29 +121,29 @@ extension AilmentReporter {
 
     private static func footer() -> HTML {
         return """
-        <footer id="footer" className="footer" role="contentinfo" aria-labelledby="footer-label">
-            <div className="footer-content">
-                <section className="footer-mini" vocab="http://schema.org/" typeof="Organization">
-                    <div className="footer-mini-news">
-                        <div className="content">
-                            <div className="color-scheme-toggle" role="radiogroup" tabIndex={0} aria-label="Select a color scheme preference.">
-                                <label data-color-scheme-option="light">
-                                    <input type="radio" name="colorToggle" value="light" autoComplete="off" />
-                                    <div className="text">Light</div>
+        <footer id=\"footer\" className=\"footer\" role=\"contentinfo\" aria-labelledby=\"footer-label\">
+            <div className=\"footer-content\">
+                <section className=\"footer-mini\" vocab=\"http://schema.org/\" typeof=\"Organization\">
+                    <div className=\"footer-mini-news\">
+                        <div className=\"content\">
+                            <div className=\"color-scheme-toggle\" role=\"radiogroup\" tabIndex={0} aria-label=\"Select a color scheme preference.\">
+                                <label data-color-scheme-option=\"light\">
+                                    <input type=\"radio\" name=\"colorToggle\" value=\"light\" autoComplete=\"off\" />
+                                    <div className=\"text\">Light</div>
                                 </label>
-                                <label data-color-scheme-option="dark">
-                                    <input type="radio" name="colorToggle" value="dark" autoComplete="off" />
-                                    <div className="text">Dark</div>
+                                <label data-color-scheme-option=\"dark\">
+                                    <input type=\"radio\" name=\"colorToggle\" value=\"dark\" autoComplete=\"off\" />
+                                    <div className=\"text\">Dark</div>
                                 </label>
-                                <label data-color-scheme-option="auto">
-                                    <input type="radio" name="colorToggle" value="auto" autoComplete="off" />
-                                    <div className="text">Auto</div>
+                                <label data-color-scheme-option=\"auto\">
+                                    <input type=\"radio\" name=\"colorToggle\" value=\"auto\" autoComplete=\"off\" />
+                                    <div className=\"text\">Auto</div>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div className="footer-mini-legal">
-                        <div className="footer-mini-legal-copyright">Copyright &copy; 2023 <a href="https://github.com/nanashili" target="_blank" rel="noreferrer">Nanashi Li</a> All rights reserved.</div>
+                    <div className=\"footer-mini-legal\">
+                        <div className=\"footer-mini-legal-copyright\">Copyright &copy; 2023 <a href=\"https://github.com/nanashili\" target=\"_blank\" rel=\"noreferrer\">Nanashi Li</a> All rights reserved.</div>
                     </div>
                 </section>
             </div>
