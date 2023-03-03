@@ -25,7 +25,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     do {
         try AilmentLogger.setup()
     } catch {
-        print("Failed to setup the Diagnostics Logger")
+        print("Failed to setup the Ailment Logger")
     }
     return true
 }
