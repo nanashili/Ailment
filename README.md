@@ -121,12 +121,6 @@ To customize the way the HTML is reported, you can pass in the formatter into th
 AilmentSector(title: "UserDefaults", diagnostics: userDefaults, formatter: <#HTMLFormatting.Type#>)
 ```
 
-## Communication
-
-- If you **found a bug**, open an issue.
-- If you **have a feature request**, open an issue.
-- If you **want to contribute**, submit a pull request.
-
 ## Installation
 
 ### Swift Package Manager
@@ -158,10 +152,6 @@ let package = Package(
     ]
 )
 ```
-
-#### Xcode
-
-To add Diagnostics as a [dependency](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) to your Xcode project, select *File > Swift Packages > Add Package Dependency* and enter the repository URL: `https://github.com/nanashili/Ailment.git`.
 
 ## License
 
